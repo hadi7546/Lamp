@@ -15,7 +15,7 @@ class RoomName extends StatelessWidget {
         width: screenWidth,
         child: Center(
           child: Transform.rotate(
-            angle: -1.58,
+            angle: SizerUtil.deviceType == DeviceType.Tablet ? 0 : -1.58,
             child: Text(
               roomName.toUpperCase(),
               style:
@@ -25,3 +25,4 @@ class RoomName extends StatelessWidget {
         ));
   }
 }
+
