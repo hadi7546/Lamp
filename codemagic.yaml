@@ -1,0 +1,3 @@
+scripts:
+  - name: Build for Android         # Name of the section
+    script: flutter build apk --release 
