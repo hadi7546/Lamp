@@ -1,3 +1,10 @@
-scripts:
-  - name: Build for Android         # Name of the section
-    script: flutter build apk --release 
+workflows:
+  example-workflow:
+    name: Andoird Build From Lamp App
+    scripts:
+      - name: Android Build
+        script: flutter build apk --release
+    publishing:
+      email:
+        recipients:
+          - hazard7546@gmail.com
