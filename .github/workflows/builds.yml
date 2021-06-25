@@ -202,4 +202,3 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: build/windows/Runner/release/sidekick.msix
           asset_name: sidekick-windows-${{ github.event.release.tag_name }}.msix
-          tag: ${{ github.ref }
