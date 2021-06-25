@@ -1,6 +1,6 @@
 on:
   release:
-    types: # This configuration does not affect the page_build event above
+    types:
       - created
 
 name: Release Artifacts
