@@ -1,1 +1,15 @@
+name: Add desktop support
 
+jobs:
+  add-desktop-support: 
+    name: "Add desktop support"
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@master
+
+      - name: Add desktop support
+        run: flutter create .
+        
