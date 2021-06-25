@@ -1,7 +1,7 @@
 on:
-  release:
-    types: # This configuration does not affect the page_build event above
-      - created
+  push:
+    branches:
+    - main
 
 name: Add desktop support
 
@@ -17,4 +17,4 @@ jobs:
 
       - name: Add desktop support
         run: flutter create .
-        
+
