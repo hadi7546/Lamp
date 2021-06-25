@@ -16,5 +16,6 @@ jobs:
         uses: subosito/flutter-action@master
 
       - name: Add desktop support
-        run: flutter create --org ir.hadi_azarnasab .
+        run: flutter create --platforms=windows,macos,linux .
+
 
